@@ -2,28 +2,117 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
     
 }
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
-    width: 100%;
-    height: 100px;
-
-    background-color: rgb(255, 255, 255, 0.1);
-    
-
-    color: white;
-
-}
-
-
-.parallax{
-    background-image: url(https://cdn.discordapp.com/attachments/1089332210689134722/1089364789857357965/hum_sakura_tree_in_landscape_with_leaf_flying_and_forest_backgr_6eb71ee4-3a00-47f9-86f5-d6be5153c220.png);
+    background-image: url(https://cdn.discordapp.com/attachments/1089332210689134722/1106314027656814672/image-header.jpg);
 
     width: 100%;
     height: 400px;
+
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header .navegacao{
+    width: 1800px;
+    height: 80px;
+    margin: 1em;
+    border-radius: 30px;
+
+    background-color: #3EBFFE;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+}
+header .logo{
+    font-size: 30px;
+    font-weight: bold;
+
+    width: 40px;
+    height: 40px;
+    margin: auto 80px;
+    align-items: center;
+
+}
+header nav{
+    width: 650px;
+    height: 30px;
+    margin: auto 0;
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+header a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+
+    display: inline-block;
+}
+header li{
+    margin: auto 1em;
+    font-size: 22px;
+    color: black;
+    list-style: none;
+
+    display: inline-block;
+}
+header .botao{
+    background-color: yellow;
+
+    border: 0px;
+    border-radius: 50px;
+    width: 90px;
+    height: 40px;
+
+    font-size: 20px;
+}
+
+main{
+    height: 240vh;
+}
+
+
+main .blocos4{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secao1{
+
+    background-image: url(https://cdn.discordapp.com/attachments/1089332210689134722/1106314027656814672/image-header.jpg);
+
+    width: 100%;
+    height: 1200px;
+
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: 50% 50%;
+
+    display: flex;
+    justify-content:flex-end;
+}
+.secao2{
+    background-image: url(https://cdn.discordapp.com/attachments/1089332210689134722/1089351675313143819/hum_water_droplets_on_a_leaf_and_forest_background_8K__fotorrea_91542a30-a06c-4112-b95f-6afd114f9660.png);
+
+    width: 100%;
+    height: 1200px;
+
 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,49 +121,49 @@ header{
     display: flex;
     justify-content:flex-end;
 }
-main .blocos4{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.secao1, .secao2{
-    width: 100%;
-    height: 400px;
-    
-    display: flex;
-    justify-content: flex-end;
-}
 .conteudo1{
-    margin-top: 250px;
+    margin-top: 550px;
 
     width: 50%;
-    height: 150px;
-    background-color: rgb(100, 255, 85);
+    height: 692px;
+    background-color:white;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.conteudo1 .bloco-menor{
+    width: 450px;
+    height: 450px;
+
+    margin: auto;
+}
+.bloco-menor a{
+    color: black;
+    margin-left: 2em;
+    font-weight: bold;
+    text-decoration-color: yellow ;
 }
 
 .conteudo2{
-    margin-top: 250px;
+    margin-top: 550px;
 
     width: 50%;
-    height: 150px;
-    background-color: rgb(141, 141, 255);
+    height: 692px;
 
-    display: flex;
-    flex-direction: column;
+    background-color: #FED403;
+
     align-items: center;
+    display: flex;
+    justify-content: center;
+
+
 }
 .conteudo3{
-    margin-bottom: 250px;
+    margin-bottom: 650px;
 
     width: 50%;
-    height: 150px;
+    height: 692px;
     background-color: rgb(255, 141, 246);
 
     display: flex;
@@ -82,10 +171,10 @@ main .blocos4{
     align-items: center;
 }
 .conteudo4{
-    margin-bottom: 250px;
+    margin-bottom: 650px;
 
     width: 50%;
-    height: 150px;
+    height: 692px;
     background-color: rgb(238, 250, 68);
 
     display: flex;
@@ -94,6 +183,7 @@ main .blocos4{
 }
 
 .conteudo h1{
+    font-size: 40px;
     padding: 1em;
 }
 .conteudo p{
@@ -108,7 +198,7 @@ footer{
 
     height: 300px;
     width: 100%;
-
+    margin-top: 300px ;
 }
 
 .footer-informacoes{
