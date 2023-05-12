@@ -148,12 +148,19 @@ main .blocos4{
     flex-direction: column;
     align-items: center;
 }
-.conteudo1 .bloco-menor{
-    width: 450px;
+.conteudo1 .bloco-menor1{
+  width: 450px;
     height: 450px;
 
-    margin: auto;
+    margin: auto;  
 }
+.conteudo4 .bloco-menor4{
+    width: 450px;
+      height: 450px;
+  
+      margin: auto;  
+  }
+
 .bloco-menor a{
     color: black;
     margin-left: 2em;
@@ -191,7 +198,7 @@ main .blocos4{
 
     width: 50%;
     height: 692px;
-    background-color: rgb(238, 250, 68);
+    background-color: white;
 
     display: flex;
     flex-direction: column;
@@ -201,7 +208,8 @@ main .blocos4{
 .conteudo h1{
     font-size: 40px;
     font-family: 'Raleway', sans-serif;
-    padding: 1em;
+    align-items: center;
+    margin: 1em auto;
 }
 .conteudo p{
     padding: 1em;
@@ -210,7 +218,7 @@ footer{
     background-color: bisque;
 
     display: flex;
-    flex-direction: column;
+
     justify-content: space-between;
 
     height: 300px;
@@ -219,13 +227,14 @@ footer{
 }
 
 .footer-informacoes{
+    margin: auto;
 
 
     display: flex;
     justify-content: space-around;
     align-items: center;
 
-    width: 1200px;
+    width: 1800px;
     height: 200px;
 }
 
