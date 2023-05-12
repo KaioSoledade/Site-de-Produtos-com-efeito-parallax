@@ -2,17 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    
+    font-family: 'Raleway', sans-serif;
+
 }
 header{
     display: flex;
     justify-content: center;
 
     background-image: url(https://cdn.discordapp.com/attachments/1089332210689134722/1106314027656814672/image-header.jpg);
-
     width: 100%;
-    height: 400px;
+    height: 200px;
 
 
     background-repeat: no-repeat;
@@ -20,7 +19,7 @@ header{
     background-size: cover;
 }
 header .navegacao{
-    width: 1800px;
+    width: 95%;
     height: 80px;
     margin: 1em;
     border-radius: 30px;
@@ -42,6 +41,8 @@ header .logo{
     margin: auto 80px;
     align-items: center;
 
+    color: white;
+
 }
 header nav{
     width: 650px;
@@ -54,7 +55,7 @@ header nav{
 }
 header a{
     text-decoration: none;
-    color: black;
+    color: white;
     list-style: none;
 
     display: inline-block;
@@ -68,14 +69,29 @@ header li{
     display: inline-block;
 }
 header .botao{
-    background-color: yellow;
+    background-color: white;
 
     border: 0px;
     border-radius: 50px;
-    width: 90px;
-    height: 40px;
+    width: 120px;
+    height: 60px;
 
     font-size: 20px;
+    font-weight: bold;
+}
+.frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 90px;
+    height: 70px;
+    color: white;
+
+    background-image: url(https://cdn.discordapp.com/attachments/1089332210689134722/1106314027656814672/image-header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 main{
@@ -184,6 +200,7 @@ main .blocos4{
 
 .conteudo h1{
     font-size: 40px;
+    font-family: 'Raleway', sans-serif;
     padding: 1em;
 }
 .conteudo p{
