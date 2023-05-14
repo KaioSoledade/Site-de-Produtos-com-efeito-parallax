@@ -95,13 +95,12 @@ header .botao{
 }
 
 main{
-    height: 240vh;
+ 
 }
 
 
 main .blocos4{
     width: 100%;
-    height: 1200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -124,10 +123,8 @@ main .blocos4{
     justify-content:flex-end;
 }
 .secao2{
-    background-image: url(https://cdn.discordapp.com/attachments/1089332210689134722/1089351675313143819/hum_water_droplets_on_a_leaf_and_forest_background_8K__fotorrea_91542a30-a06c-4112-b95f-6afd114f9660.png);
-
     width: 100%;
-    height: 1200px;
+    height: 692px;
 
 
     background-repeat: no-repeat;
@@ -183,19 +180,15 @@ main .blocos4{
 
 }
 .conteudo3{
-    margin-bottom: 650px;
-
     width: 50%;
     height: 692px;
-    background-color: rgb(255, 141, 246);
+    background-color: #FE7263;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .conteudo4{
-    margin-bottom: 650px;
-
     width: 50%;
     height: 692px;
     background-color: white;
@@ -214,11 +207,100 @@ main .blocos4{
 .conteudo p{
     padding: 1em;
 }
+
+.secao3{
+    width: 100%;
+    height: 692px;
+
+    display: flex;
+}
+.secao3 .conteudo5{
+    width: 50%;
+    height: 692px;
+    background-color: #96D5C7;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.secao3 .conteudo6{
+    width: 50%;
+    height: 692px;
+    background-color: #61CCFF;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+
+}
+.secao3 .text-secao3{
+    padding: 1em 250px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text-secao3 h1{
+    align-items: center;
+    margin: 0.5em auto;
+    font-size: 45px;
+}
+
+
+.opinioes{
+    width: 100%;
+    height: 692px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.opinioes .testemunha{
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px ;
+    color: rgb(107, 107, 107);
+}
+.opinioes .container-opiniao{
+    width: 1400px;
+    height: 600px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.opinioes .opiniao{
+    width: 410px;
+    text-align: center;
+    
+    
+}
+.opinioes .opiniao .opiniao-relato{
+ text-align:center;
+ margin: 1.5em;
+ font-size: 17px;
+}
+.opinioes .opiniao .opiniao-nome{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.opinioes img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150%;
+    margin-bottom: 50px ;
+}
+
 footer{
     background-color: bisque;
 
     display: flex;
-
     justify-content: space-between;
 
     height: 300px;
