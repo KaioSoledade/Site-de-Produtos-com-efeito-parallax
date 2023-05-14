@@ -94,9 +94,7 @@ header .botao{
     background-size: cover;
 }
 
-main{
- 
-}
+
 
 
 main .blocos4{
@@ -125,11 +123,6 @@ main .blocos4{
 .secao2{
     width: 100%;
     height: 692px;
-
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
 
     display: flex;
     justify-content:flex-end;
@@ -206,6 +199,33 @@ main .blocos4{
 }
 .conteudo p{
     padding: 1em;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.conteudo a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+
+    font-weight: bold;
+    color: black;
+    
+}
+
+.conteudo a::after{
+    content: ''; /* adiciona um pseudo-elemento depois do elemento */
+    position: absolute; /* define a posição absoluta para o pseudo-elemento */
+    left: 0;
+    bottom: -2px; /* define a posição do sublinhado */
+    width: 100%; /* define a largura do sublinhado como 100% */
+    height: 2px; /* define a altura do sublinhado como 2 pixels */
+    background-color: rgb(43, 255, 0); /* define a cor do sublinhado */
+    transition: transform 0.3s ease; /* define a transição da propriedade transform com duração de 0.3 segundos e uma curva de transição ease */
+    transform: scaleX(0); /* define a escala horizontal do sublinhado como 0 para escondê-lo inicialmente */
+    transform-origin: left;
+}
+.conteudo a:hover::after{
+    transform: scaleX(1); /* define a escala horizontal do sublinhado como 1 para exibir o sublinhado na animação */
 }
 
 .secao3{
@@ -246,11 +266,14 @@ main .blocos4{
     margin: 0.5em auto;
     font-size: 45px;
 }
+.text-secao3 p{
+    text-align: center;
+}
 
 
 .opinioes{
     width: 100%;
-    height: 692px;
+    height: 780px;
 
     display: flex;
     flex-direction: column;
@@ -263,11 +286,11 @@ main .blocos4{
     font-size: 35px;
     display: flex;
     justify-content: center;
-    margin-top: 100px ;
+    margin: 70px 0 ;
     color: rgb(107, 107, 107);
 }
 .opinioes .container-opiniao{
-    width: 1400px;
+    width: 1800px;
     height: 600px;
 
     display: flex;
@@ -275,19 +298,38 @@ main .blocos4{
     align-items: center;
 }
 .opinioes .opiniao{
+    margin-top: 100px;
     width: 410px;
     text-align: center;
-    
+    margin-bottom: 200px;
     
 }
+
+.opinioes .opiniao:hover{
+    scale: 1.1;
+    transition: 1s ease;
+}
+
 .opinioes .opiniao .opiniao-relato{
  text-align:center;
+
  margin: 1.5em;
+ margin-bottom: 5em;
+
  font-size: 17px;
+ color: rgb(39, 39, 39) ;
+
+ line-height: 1.5;
 }
 .opinioes .opiniao .opiniao-nome{
     font-weight: bold;
     font-size: 20px;
+
+    margin: 1em;
+}
+.opinioes .opiniao .opiniao-trabalho{
+    color: rgb(148, 148, 148);
+    font-weight: bold;
 }
 
 .opinioes img{
@@ -297,37 +339,84 @@ main .blocos4{
     margin-bottom: 50px ;
 }
 
+
+.imagens-4{
+    width: 100%;
+    height: 400px;
+}
+.container-imagens{
+    display: flex;
+}
+.container-imagens img{
+    width: 100%;
+}
+
 footer{
-    background-color: bisque;
+    background-color: #90D4C5;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
-    height: 300px;
+   
     width: 100%;
-    margin-top: 300px ;
+    height: 500px;
+
 }
 
 .footer-informacoes{
-    margin: auto;
-
+    width: 1000px;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
-    width: 1800px;
-    height: 200px;
+}
+.footer-logo{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(46, 46, 46);
 }
 
 .informacoes1{
     width: 350px;
-    height: 350px;
+    height: 250px;
 
+    display: flex;
+    justify-content: center;
+}
+.informacoes1 nav{
+    margin: 80px 0 0 0 ;
+    width: 700px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.informacoes1 a{
+    font-size: 30px;
+    color: rgb(90, 87, 87);
+    text-decoration: none;
 
+    margin: 1em;
 }
 
 .informcoes1 h1{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 15px;
+}
+
+.icones{
+    width: 400px;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icones div{
+    width: 70px;
+    height: 70px;
 }
